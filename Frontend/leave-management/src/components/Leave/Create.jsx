@@ -56,7 +56,7 @@ const Create = () => {
 
   return (
     <div id='create_leave'>
-       <h2>Leave Applying Form</h2>
+       <h2 id='leave_label'>Leave Applying Form</h2>
        <input 
           type="text" 
           id='leave_type'
@@ -65,7 +65,7 @@ const Create = () => {
           value={formData.leave_type}
           />
        <br />
-       <label>To:</label>
+       <label id='label'>To:</label>
        <input 
           type="text" 
           id="to" 
@@ -74,7 +74,7 @@ const Create = () => {
           value={formData.to}
           />
        <br />
-       <label>Date From:</label>
+       <label id='label'>Leave From:</label>
        <input 
           type="date" 
           id="Datefrom"
@@ -82,7 +82,7 @@ const Create = () => {
           value={formData.Datefrom} 
           />
        <br />
-       <label>Date To:</label>
+       <label id='label'>Leave To:</label>
        <input 
           type="date" 
           id="Dateto"
@@ -90,7 +90,7 @@ const Create = () => {
           value={formData.Dateto} 
           />
        <br />
-       <label>Leave Reason</label>
+       <label id='label'>Leave Reason</label>
        <br />
        <textarea 
           id="reason"
@@ -99,7 +99,7 @@ const Create = () => {
           value={formData.reason}
           ></textarea>
        <br />
-       <label>Signature:</label>
+       <label id='label'>Signature:</label>
        <input 
           type="test" 
           id="signature"
