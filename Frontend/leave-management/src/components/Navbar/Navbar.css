@@ -1,0 +1,68 @@
+#navbar{
+    width: 100%;
+    margin: 0%;
+    height: 70px;
+    background-color: #124a85;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+#h{
+    color: white;
+    padding-left: 100px;
+}
+#create{
+    width: 100px;
+    height: 35px;
+    border:1px solid #fff;
+    background-color: #124a85;
+    color: white;
+    margin-top: 17px;
+    margin-left: 700px;
+    cursor: pointer;
+}
+#create:hover{
+    background-color: #fff;
+    color: #124a85;
+}
+#cancel{
+    width: 100px;
+    height: 35px;
+    border:1px solid #fff;
+    background-color: #124a85;
+    color: white;
+    margin-top: 17px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#cancel:hover{
+    background-color: #fff;
+    color: #124a85;
+}
+#check{
+    width: 100px;
+    height: 35px;
+    border:1px solid #fff;
+    background-color: #124a85;
+    color: white;
+    margin-top: 17px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#check:hover{
+    background-color: #fff;
+    color: #124a85;
+}
+#account{
+    width: 100px;
+    height: 35px;
+    border:1px solid #fff;
+    background-color: #124a85;
+    color: white;
+    margin-top: 17px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#account:hover{
+    background-color: #fff;
+    color: #124a85;
+}
