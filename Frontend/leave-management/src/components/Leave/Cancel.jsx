@@ -2,6 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import Navbar from '../Navbar/Navbar';
 
 const Cancel = () => {
 
@@ -19,6 +20,8 @@ const Cancel = () => {
     }
 
   return (
+    <>
+    <Navbar />
     <div id='cancel_leave'>
          {
             list.map((e)=>
@@ -32,6 +35,7 @@ const Cancel = () => {
             )
         }
     </div>
+    </>
   )
 }
 

@@ -2,6 +2,7 @@ import axios from 'axios'
 import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import Navbar from '../Navbar/Navbar'
 import "./style.css"
 
 const Create = () => {
@@ -55,6 +56,8 @@ const Create = () => {
     }
 
   return (
+    <>
+    <Navbar />
     <div id='create_leave'>
        <h2 id='leave_label'>Leave Applying Form</h2>
        <input 
@@ -113,6 +116,7 @@ const Create = () => {
           onClick={formSubmitter}
           >Create Leave</button>
     </div>
+    </>
   )
 }
 
