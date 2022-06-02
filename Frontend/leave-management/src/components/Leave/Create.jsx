@@ -72,7 +72,7 @@ const Create = () => {
        <input 
           type="text" 
           id="to" 
-          placeholder='To who'
+          placeholder='To who(Manager, Team Lead, ...)'
           onChange={handleChange}
           value={formData.to}
           />

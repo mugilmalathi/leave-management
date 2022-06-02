@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 #navbar{
     width: 100%;
     margin: 0%;
@@ -10,6 +12,9 @@
     color: white;
     padding-left: 100px;
 }
+a{
+    text-decoration: none;
+}
 #create{
     width: 100px;
     height: 35px;
@@ -17,7 +22,7 @@
     background-color: #124a85;
     color: white;
     margin-top: 17px;
-    margin-left: 700px;
+    margin-left: 600px;
     cursor: pointer;
 }
 #create:hover{
@@ -65,4 +70,113 @@
 #account:hover{
     background-color: #fff;
     color: #124a85;
+}
+#admin{
+    width: 100%;
+    margin: 0%;
+    height: 70px;
+    background-color: #124a85;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+}
+#logout{
+    width: 100px;
+    height: 35px;
+    border:1px solid #fff;
+    background-color: #124a85;
+    color: white;
+    margin-top: 17px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#approve{
+    width: 100px;
+    height: 35px;
+    border:1px solid #fff;
+    background-color: #124a85;
+    color: white;
+    margin-top: 17px;
+    margin-left: 1100px;
+    cursor: pointer;
+}
+#manager{
+    width: 60%;
+    height: 1500px;
+    margin: auto;
+}
+#manager>div{
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 50px;
+}
+#head{
+    text-align: center;
+    color: #124a85;
+    padding-top: 30px;
+}
+#ldate{
+    text-align: end;
+    padding-right: 150px;
+}
+#lfrom{
+    padding-left: 100px;
+    padding-top: 50px;
+}
+#manager>div>h4{
+    padding-left: 150px;
+    line-height: 5px;
+    color: gray;
+    font-size: 12px;
+}
+#sub{
+    padding-left: 10px;
+    color: #124a85;
+}
+#lcontent{
+    text-align: center;
+    padding-left: 150px;
+    padding-right: 50px;
+    color: #124a85;
+}
+#thank{
+    text-align: center;
+    font-weight: bold;
+
+}
+#sincere{
+    text-align: end;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: black;
+}
+#manager>div>h3{
+    text-align: end;
+    padding-right: 90px;
+    color: #124a85;
+    font-family: 'Satisfy', cursive;
+    margin-top: -20px;
+    font-size: 30px;
+}
+#decision{
+    text-align: center;
+    padding-bottom: 50px;
+}
+#app{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #019a02;
+    background-color:#019a02;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#rej{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #d10305;
+    background-color:#d10305;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
 }

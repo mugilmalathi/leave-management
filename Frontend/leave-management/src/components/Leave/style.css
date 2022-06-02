@@ -105,42 +105,44 @@
     padding-top: 10px;
 }
 #check_container>div:nth-child(3){
-    width: 20%;
+    width: 15%;
     border: 1px solid gray;
     padding-top: 10px;
 }
 #check_container>div:nth-child(4){
-    width: 20%;
+    width: 15%;
     border: 1px solid gray;
     padding-top: 10px;
 }
 #check_container>div:nth-child(5){
     width: 15%;
     border: 1px solid gray;
-}
-#check_container>div:nth-child(5)>button{
-    width: 100px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border:1px solid #124a85;
-    background-color: #124a85;
-    color: white;
-    cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-#check_container>div:nth-child(5)>button:hover{
-    background-color: #fff;
-    color: #124a85;
-}
-#check_container>div:nth-child(6){
-    width: 15%;
-    border: 1px solid gray;
     padding-top: 10px;
 }
-#check_container>div:nth-child(even){
-    background-color: #124a85;
-    color: #fff;
+#check_container>div:nth-child(7){
+    width: 15%;
+    border: 1px solid gray;
+}
+#check_container>div:nth-child(6)>button{
+    width: 100px;
+    height: 35px;
+    border: 1px solid #019a02;
+    background-color:#019a02;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+#check_container>div:nth-child(6)>button:hover{
+    background-color: #fff;
+    color: #124a85;
+    border: 1px solid #124a85;
+}
+#check_container>div:nth-child(6){
+    width: 20%;
+    border: 1px solid gray;
+    padding-top: 10px;
 }
 #cancel_leave{
     width: 60%;
@@ -173,30 +175,32 @@
     padding-top: 10px;
 }
 #cancel_container>div:nth-child(4){
-    width: 20%;
+    width: 15%;
     border: 1px solid gray;
     padding-top: 10px;
 }
 #cancel_container>div:nth-child(5){
+    width: 15%;
+    border: 1px solid gray;
+    padding-top: 10px;
+}
+#cancel_container>div:nth-child(6){
     width: 20%;
     border: 1px solid gray;
 }
-#cancel_container>div:nth-child(5)>button{
+#cancel_container>div:nth-child(6)>button{
     width: 100px;
-    height: 30px;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    border:1px solid #fff;
-    background-color: #124a85;
+    height: 35px;
+    border: 1px solid #d10305;
+    background-color:#d10305;
     color: white;
+    font-weight: bold;
+    margin-left: 10px;
     cursor: pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25px;
 }
-#cancel_container>div:nth-child(5)>button:hover{
+#cancel_container>div:nth-child(6)>button:hover{
     background-color: #fff;
     color: #124a85;
-}
-#cancel_container>div:nth-child(odd){
-    background-color: #124a85;
-    color: #fff;
+    border: 1px solid #124a85;
 }

@@ -28,6 +28,7 @@ const Check = () => {
         {
             list.map((e)=>
             <div id='check_container'>
+                <div><h4>{e.signature}</h4></div>
                 <div><h4>{e.leave_type}</h4></div>
                 <div><h4>{e.to}</h4></div>
                 <div><h4>{e.Datefrom}</h4></div>
