@@ -27,7 +27,7 @@ const Approve = () => {
             {
                 list.map((e)=>
                     <div>
-                        <h1 id='head'>Leave Form</h1>
+                        <h1 id='head'>Leave Approval Letter</h1>
                         <p id='ldate'>Date:{e.Datefrom}</p>
                         <h2 id='lfrom'>From</h2>
                         <h4>{e.signature}</h4>

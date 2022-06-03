@@ -11,23 +11,22 @@ const Account = () => {
   })
   const navigate = useNavigate();
 
- console.log(form.email)
   return (
     <div>
-            <h4>Login</h4>
-            <label>Email</label>
-            <br />
-            <input 
-               type="text" 
-               />
-            <br />
-            <label>Password</label>
-            <br />
-            <input 
-               type="password" 
-               />
-            <br />
-            <input type='submit'/>
+        <h4>Login</h4>
+        <label>Email</label>
+        <br />
+        <input 
+            type="text" 
+            />
+        <br />
+        <label>Password</label>
+        <br />
+        <input 
+            type="password" 
+            />
+        <br />
+        <Link to="/adminnav"><input type='submit'/></Link>
     </div>
   )
 }
