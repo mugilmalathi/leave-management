@@ -2,33 +2,29 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router';
+import { FetchData } from '../../redux/action/action';
 import Navbar from '../Navbar/Navbar';
 
 const Cancel = () => {
 
-    const [list, setList] = useState([]);
-
-    const _id = useParams()
+    const employee = useSelector((state)=> state.employee.employee);
+    console.log(employee)
+    const dispatch = useDispatch();
 
     useEffect(()=>{
-        getData();
+        dispatch(FetchData())
     }, []);
 
-    const getData = ()=>{
-        axios.get("https://leave-management-backend.herokuapp.com/employee")
-        .then((res)=>{
-            setList(res.data)
-        })
-    }
 
     const cancelLeave =(id)=>{
-        fetch(`https://leave-management-backend.herokuapp.com/employee/${id}`,{
+        fetch(`https://leave-backend-management.herokuapp.com/employee/${id}`,{
             method: 'DELETE'
         }).then((result)=>{
             result.json().then((res)=>{
                 console.warn(res);
-                getData();
+                dispatch(FetchData())
             })
         })
     }
@@ -38,7 +34,7 @@ const Cancel = () => {
     <Navbar />
     <div id='cancel_leave'>
          {
-            list.map((e)=>
+            employee.map((e)=>
             <div id='cancel_container'>
                 <div><h4>{e.signature}</h4></div>
                 <div><h4>{e.leave_type}</h4></div>

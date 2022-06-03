@@ -2,22 +2,19 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { FetchData } from '../../redux/action/action';
 import AdminNav from '../Navbar/AdminNav'
 
 const Approve = () => {
 
-    const [list, setList] = useState([]);
+    const employee = useSelector((state)=> state.employee.employee);
+    console.log(employee)
+    const dispatch = useDispatch();
 
     useEffect(()=>{
-        getData();
+        dispatch(FetchData())
     }, []);
-
-    const getData = ()=>{
-        axios.get("https://leave-management-backend.herokuapp.com/employee")
-        .then((res)=>{
-            setList(res.data)
-        })
-    }
 
 
   return (
@@ -25,7 +22,7 @@ const Approve = () => {
         <AdminNav />
         <div id='manager'>
             {
-                list.map((e)=>
+                employee.map((e)=>
                     <div>
                         <h1 id='head'>Leave Approval Letter</h1>
                         <p id='ldate'>Date:{e.Datefrom}</p>

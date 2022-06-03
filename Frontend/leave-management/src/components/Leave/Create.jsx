@@ -9,28 +9,32 @@ const Create = () => {
 
     const [formData, setFormData] = useState({
         leave_type:"",
+        employeeId:"",
         to:"",
         Datefrom:"",
         Dateto:"",
         reason:"",
-        signature:""
+        signature:"",
+        approve:"false"
     })
 
     const formSubmitter = e => {
-        axios.post("https://leave-management-backend.herokuapp.com/employee", formData)
+        axios.post("https://leave-backend-management.herokuapp.com/employee", formData)
           .then(()=>{
               setFormData({
                 leave_type:"",
+                employeeId:"",
                 to:"",
                 Datefrom:"",
                 Dateto:"",
                 reason:"",
-                signature:""
+                signature:"",
+                approve:"false"
               })
           })
-          .then(()=>{
-              getData();
-          })
+        //   .then(()=>{
+        //       getData();
+        //   })
     }
 
     const [data, setData] = useState({});
@@ -44,17 +48,6 @@ const Create = () => {
     }
 
 
-    useEffect(()=>{
-        getData();
-    }, []);
-
-    const getData = ()=>{
-        axios.get("https://leave-management-backend.herokuapp.com/employee")
-        .then((res)=>{
-            setData(res.data)
-        })
-    }
-
   return (
     <>
     <Navbar />
@@ -66,6 +59,15 @@ const Create = () => {
           placeholder='Leave Type'
           onChange={handleChange}
           value={formData.leave_type}
+          />
+       <br />
+       <label id='label'>EmployeeID:</label>
+       <input 
+          type="text" 
+          id="employeeId" 
+          placeholder='Enter Your Employee ID'
+          onChange={handleChange}
+          value={formData.employeeId}
           />
        <br />
        <label id='label'>To:</label>
@@ -106,7 +108,7 @@ const Create = () => {
        <input 
           type="test" 
           id="signature"
-          placeholder='Type your Name'
+          placeholder='Enter your Name'
           onChange={handleChange}
           value={formData.signature} 
           />
