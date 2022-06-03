@@ -11,7 +11,7 @@ const connect = require("./config/db");
 
 const PORT = process.env.PORT;
 
-const employeeController = require("./controller/employee.controller");
+const employeeController = require("./controller/employee.controller"); 
 
 app.use("/", employeeController);
 

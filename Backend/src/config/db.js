@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-require("dotenv").config();
+require("dotenv").config(); //connect mongoDb to heroku deployment
 
 module.exports= ()=>{
 

@@ -2,7 +2,9 @@ const express = require("express");
 const router = express.Router();
 const Employee = require("../model/employee.model");
 
-router.post("/employee", async(req, res)=>{
+//Crud controller
+
+router.post("/employee", async(req, res)=>{ //Post Method to add new data to DB
 
     try{
         const employee = await Employee.create(req.body);
@@ -12,7 +14,7 @@ router.post("/employee", async(req, res)=>{
     }
 })
 
-router.get("/employee", async(req, res)=>{
+router.get("/employee", async(req, res)=>{ //Get all datas from DB
 
     try{
         const employee = await Employee.find().lean().exec();
@@ -22,7 +24,7 @@ router.get("/employee", async(req, res)=>{
     }
 })
 
-router.get("/employee/:id", async (req, res)=>{
+router.get("/employee/:id", async (req, res)=>{ //Get single data using id from DB
     
     try{
         const employee = await Employee
@@ -35,7 +37,7 @@ router.get("/employee/:id", async (req, res)=>{
     }
 })
 
-router.patch("/employee/:id", async (req, res)=>{
+router.patch("/employee/:id", async (req, res)=>{ //Update existing data from DB using id
     
     try{
         const employee = await Employee.findByIdAndUpdate(
@@ -49,7 +51,7 @@ router.patch("/employee/:id", async (req, res)=>{
     }
 })
 
-router.delete("/employee/:id", async (req, res)=>{
+router.delete("/employee/:id", async (req, res)=>{  //delete particular data from Db using id
     
     try{
         const employee = await Employee.findByIdAndDelete(
