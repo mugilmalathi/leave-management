@@ -19,9 +19,7 @@ const Approve = () => {
         dispatch(approve(e._id))
     }
     const rejData = (e)=>{
-        console.log((e));
-        
-        dispatch(reject(e))
+        dispatch(reject(e._id))
     }
 
     // const approveLeave =(id)=>{
@@ -59,8 +57,14 @@ const Approve = () => {
                         <h4 id='sincere'>Yours Sincerely,</h4>
                         <h3>{e.signature}</h3>
                         <div id='decision'>
-                        <button id='app' onClick={()=>appData(e)}>Approve</button>
-                        <button id='rej' onClick={()=>rejData(e.employeeId)}>Reject</button>
+                        <button id='app' onClick={()=>{
+                            appData(e)
+                            alert("Successfully Approved..!")
+                        }}>Approve</button>
+                        <button id='rej' onClick={()=>{
+                            rejData(e)
+                            alert("Successfully Rejected..!")
+                        }}>Reject</button>
                         </div>
                     </div>
                 )

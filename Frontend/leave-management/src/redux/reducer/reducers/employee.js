@@ -25,8 +25,8 @@ const INITIAL_STATE = {
           })
           return {...state, employee:app}
 
-        // case actionTypes.REJECT:
-        //   return {...state, rejected:state.rejected.push(payload)}
+        case actionTypes.REJECT:
+          return {...state, employee: payload}
 
         default:
             return state;
