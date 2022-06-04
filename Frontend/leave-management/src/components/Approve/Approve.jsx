@@ -3,19 +3,36 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { FetchData } from '../../redux/action/action';
+import { approve, FetchData, reject } from '../../redux/action/action';
 import AdminNav from '../Navbar/AdminNav'
 
 const Approve = () => {
 
     const employee = useSelector((state)=> state.employee.employee);
-    console.log(employee)
     const dispatch = useDispatch();
 
     useEffect(()=>{
         dispatch(FetchData())
     }, []);
 
+    const appData = (e)=>{
+        dispatch(approve(e._id))
+    }
+    const rejData = (e)=>{
+        console.log((e));
+        
+        dispatch(reject(e))
+    }
+
+    // const approveLeave =(id)=>{
+    //     fetch(`https://leave-backend-management.herokuapp.com/employee/${id}`,{
+    //         method: 'PATCH'
+    //     }).then((result)=>{
+    //         result.json().then((res)=>{
+    //           dispatch(FetchData());
+    //         })
+    //     })
+    // }
 
   return (
     <div>
@@ -42,8 +59,8 @@ const Approve = () => {
                         <h4 id='sincere'>Yours Sincerely,</h4>
                         <h3>{e.signature}</h3>
                         <div id='decision'>
-                        <button id='app'>Approve</button>
-                        <button id='rej'>Reject</button>
+                        <button id='app' onClick={()=>appData(e)}>Approve</button>
+                        <button id='rej' onClick={()=>rejData(e.employeeId)}>Reject</button>
                         </div>
                     </div>
                 )

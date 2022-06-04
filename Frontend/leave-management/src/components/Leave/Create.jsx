@@ -32,9 +32,6 @@ const Create = () => {
                 approve:"false"
               })
           })
-        //   .then(()=>{
-        //       getData();
-        //   })
     }
 
     const [data, setData] = useState({});

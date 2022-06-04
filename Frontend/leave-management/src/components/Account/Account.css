@@ -1,0 +1,36 @@
+#login{
+    width: 20%;
+    height: 300px;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+#login>h4{
+    color: #124a85;
+    padding-top: 20px;
+}
+#login>input{
+    width: 250px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#login-but{
+    width: 260px;
+    height: 35px;
+    border:1px solid #124a85;
+    background-color: #124a85;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#login-but:hover{
+    background-color: #fff;
+    color: #124a85;
+}
+#login>p{
+    color: gray;
+    font-size: small;
+}

@@ -1,13 +1,5 @@
 import * as actionTypes from "./actionTypes";
 import api from "../../Apis/api"
-
-export const SetGrocery = (employee)=>{
-
-    return{
-        type: actionTypes.SET_DATA,
-        payload: employee
-    }
-  }
   
 export const FetchData = ()=> async (dispatch)=>{
   const response = await api.get("/employee");
@@ -16,3 +8,19 @@ export const FetchData = ()=> async (dispatch)=>{
     payload: response.data
     })
   }
+
+  export const approve = (id)=> async (dispatch)=>{
+    const response = await api.patch(`/employee/${id}`);
+    dispatch({
+      type: actionTypes.APPROVE, 
+      payload: response.data
+      })
+    }
+
+export const reject =(data)=>{
+
+  return {
+    type: actionTypes.REJECT,
+    payload: data
+  }
+}

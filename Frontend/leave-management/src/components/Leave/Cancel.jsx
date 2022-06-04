@@ -10,7 +10,6 @@ import Navbar from '../Navbar/Navbar';
 const Cancel = () => {
 
     const employee = useSelector((state)=> state.employee.employee);
-    console.log(employee)
     const dispatch = useDispatch();
 
     useEffect(()=>{

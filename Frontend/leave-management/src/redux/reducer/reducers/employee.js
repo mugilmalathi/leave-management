@@ -1,7 +1,9 @@
 import * as actionTypes from "../../action/actionTypes";
 
 const INITIAL_STATE = {
-    employee: []
+    employee: [],
+    // approved:[],
+    // rejected:[]
   };
 
 
@@ -9,11 +11,22 @@ const INITIAL_STATE = {
 
     switch(type){
 
-        case actionTypes.SET_DATA:
-            return { ...state, employee: payload};
-
         case actionTypes.FETCH_DATA:
           return { ...state, employee: payload};
+
+        case actionTypes.APPROVE:
+          let app = state.employee.filter((e)=>{
+            if(e.approve == false){
+              e.approve = true;
+              return true;
+            }else{
+              return true;
+            }
+          })
+          return {...state, employee:app}
+
+        // case actionTypes.REJECT:
+        //   return {...state, rejected:state.rejected.push(payload)}
 
         default:
             return state;

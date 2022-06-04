@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router';
 import { Link } from 'react-router-dom';
+import "./Account.css"
 
 const Account = () => {
 
@@ -12,8 +13,9 @@ const Account = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div id='login'>
         <h4>Login</h4>
+        <p>Please enter username:admin pwd:admin</p>
         <label>Email</label>
         <br />
         <input 
@@ -26,7 +28,13 @@ const Account = () => {
             type="password" 
             />
         <br />
-        <Link to="/adminnav"><input type='submit'/></Link>
+        <button 
+        id='login-but' 
+        type='submit' 
+        onClick={()=>{
+          navigate('/adminnav')
+        }}>Login</button>
+        
     </div>
   )
 }
