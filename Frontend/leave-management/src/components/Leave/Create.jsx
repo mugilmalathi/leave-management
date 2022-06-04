@@ -18,7 +18,7 @@ const Create = () => {
         approve:"false"
     })
 
-    const formSubmitter = e => {
+    const formSubmitter = (e) => {
         axios.post("https://leave-backend-management.herokuapp.com/employee", formData)
           .then(()=>{
               setFormData({
@@ -112,7 +112,11 @@ const Create = () => {
        <br />
        <button 
           id="apply" 
-          onClick={formSubmitter}
+          onClick={()=>{
+             formSubmitter(formData)
+             alert("Successfully created..!")
+          }
+          }
           >Create Leave</button>
     </div>
     </>

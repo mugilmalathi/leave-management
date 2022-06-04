@@ -20,7 +20,7 @@ export const FetchData = ()=> async (dispatch)=>{
 export const reject = (id)=> async (dispatch)=>{
   const response = await api.delete(`/employee/${id}`);
   dispatch({
-    type: actionTypes.APPROVE, 
+    type: actionTypes.REJECT, 
     payload: response.data
     })
 }
