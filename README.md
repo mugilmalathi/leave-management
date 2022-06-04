@@ -13,11 +13,17 @@ Features:
 
 snapshots:
 
-1. Employee Leave Aplying Page:
-2. ![](/MartImages/mart1.png)
-3. Leave Creating Form:
-4. Cancel Leave Page:
-5. Leave Check Page:
-6. Account Login page:
-7. Manager Landing Page:
-8. Leave Applying Letter:
+Employee Leave Aplying Page:
+![](/Leave/leave1.png)
+Leave Creating Form:
+![](/Leave/leave2.png)
+Cancel Leave Page:
+![](/Leave/leave3.png)
+Leave Check Page:
+![](/Leave/leave4.png)
+Account Login page:
+![](/Leave/leave5.png)
+Manager Landing Page:
+![](/Leave/leave6.png)
+Leave Applying Letter:
+![](/Leave/leave7.png)
