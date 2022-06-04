@@ -1,7 +1,7 @@
-# leave-management
+# leave Management
 Leave management system is a web application that uses to create, cancel and check leave status fro the employee. Employee can create the leave and cancel the leave and check the leave status. Manager can approve or reject the employees leave request.
 
-Features:
+#Features:
 
    1. Employee can create the leave using the leave form by clicking "Create Leave".
    2. Employee can Check the Leave status wheather the manager was approved or rejected by clicking "Check Leave".
@@ -12,14 +12,14 @@ Features:
    7. Once click logout it will be again go to the leave applying page.
 
 
-<h3 align="left">Tech Stacks:</h3>
+<h3 align="left">#Tech Stacks:</h3>
 <p align="left">
 
 <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
 <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img style="margin-left:40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> 
 </p>
 
-snapshots:
+#snapshots:
 
 Employee Leave Aplying Page:
 ![](/Leave/leave1.png)
